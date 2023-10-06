@@ -53,7 +53,7 @@ public class Calculator_Test {
 
         String calculateinBundleid="com.google.android.calculator";
 
-        driver.activateApp(calculateinBundleid);//burada ise uygulamayi acti
+        driver.activateApp(calculateinBundleid);//burada ise uygulamayi act
         Assert.assertTrue( driver.isAppInstalled(calculateinBundleid));
 
 
