@@ -55,6 +55,7 @@ public class Calculator_Test {
 
         driver.activateApp(calculateinBundleid);//burada ise uygulamayi actKov
         Assert.assertTrue( driver.isAppInstalled(calculateinBundleid));
+        //yenisi
 
 
 
