@@ -196,6 +196,22 @@ public class ArabamComTest {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        wait.until(ExpectedConditions.elementToBeClickable(driver.findElementById("com.dogan.arabam:id/btn_next"))).click();
+        wait.until(ExpectedConditions.elementToBeClickable(driver.findElementById("com.dogan.arabam:id/rbIDontKnow"))).click();
+        //eger bir elemente tiklayamazsa, x ve y koordinartlarini inspector de ucuncu siradaki simnge yardimiyla lip
+        //tiklamasini saglayabilirz.
+        wait.until(ExpectedConditions.elementToBeClickable(driver.findElementById("com.dogan.arabam:id/btnNext"))).click();
+
+
+        MobileElement arabamDegerElement = driver.findElement(By.id("com.dogan.arabam:id/tvAveragePrice"));
+        String arabamDeger = arabamDegerElement.getText();
+        arabamDeger = arabamDeger.replaceAll("[^0-9]", "");
+        int arabamDegerInt = Integer.parseInt(arabamDeger);
+        Assert.assertTrue(arabamDegerInt > 500000, "Araba değeri 500.000'den büyük değil: " + arabamDegerInt);
+        driver.quit();
+
+
+
 
 
 
