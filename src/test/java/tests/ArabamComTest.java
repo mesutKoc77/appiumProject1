@@ -1,4 +1,4 @@
-
+package tests;
 
 import io.appium.java_client.MobileElement;
 
@@ -10,7 +10,6 @@ import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
 import org.openqa.selenium.*;
-import io.appium.java_client.TouchAction;
 
 
 import org.openqa.selenium.By;
@@ -28,13 +27,6 @@ import java.io.File;
 import java.time.Duration;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.concurrent.TimeUnit;
-
-
-
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 

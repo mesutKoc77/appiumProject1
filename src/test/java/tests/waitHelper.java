@@ -1,3 +1,5 @@
+package tests;
+
 public class waitHelper {
 
     public static void sleep(int seconds) {
