@@ -206,21 +206,6 @@ public class ArabamComTest {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         //yil sec
         //model sec
         //govde tipi sec
