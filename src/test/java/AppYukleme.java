@@ -23,13 +23,12 @@ public class AppYukleme {
         capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2"); //"Android 6" nin altinda bir surum soz konusu ise
         //UiAutomator kullanilir.
         //bir sonraki satir herhangi bir uygulamayi yuklemek icin kullanilir.
-        capabilities.setCapability(MobileCapabilityType.APP,"/Users/mesut/IdeaProjects/Appium_T_113/Apps/arabam.com_5.0.1_Apkpure.apk");
+        capabilities.setCapability(MobileCapabilityType.APP,"/Users/mesut/IdeaProjects/Appium_T_113/Apps/Apk Bilgisi_2.3.4_apkcombo.com.apk");
         //app capabilitytype bir uygulmyi yuklee /*
         // mek istedigimizde indirdigimiz apk dosyasinin path uzantisini  vererek
         // o uygulamayi yuklemek icin kullandigimiz desiredCapability./
         driver=new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723/wd/hub"),capabilities);
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-        driver.quit();
 
 
 

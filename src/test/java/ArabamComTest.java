@@ -1,13 +1,21 @@
+<<<<<<< HEAD
 
 import io.appium.java_client.MobileElement;
+=======
+import io.appium.java_client.TouchAction;
+>>>>>>> origin/main
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
+<<<<<<< HEAD
 import org.openqa.selenium.*;
 import io.appium.java_client.TouchAction;
 
+=======
+import org.openqa.selenium.By;
+>>>>>>> origin/main
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -15,6 +23,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+<<<<<<< HEAD
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -24,6 +33,13 @@ import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 
+=======
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.time.Duration;
+import java.util.concurrent.TimeUnit;
+
+>>>>>>> origin/main
 public class ArabamComTest {
 
     AndroidDriver<AndroidElement> driver;
@@ -91,6 +107,7 @@ public class ArabamComTest {
 
         //vw markasini sec
 
+<<<<<<< HEAD
         TouchAction touchAction;
         touchAction = new TouchAction<>(driver);
 
@@ -184,6 +201,21 @@ public class ArabamComTest {
 
 
 
+=======
+
+
+
+
+
+
+
+
+
+
+        //yil sec
+        //model sec
+        //govde tipi sec
+>>>>>>> origin/main
 
 
     }
