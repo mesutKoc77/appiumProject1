@@ -209,6 +209,7 @@ public class ArabamComTest {
         int arabamDegerInt = Integer.parseInt(arabamDeger);
         Assert.assertTrue(arabamDegerInt > 500000, "Araba değeri 500.000'den büyük değil: " + arabamDegerInt);
         driver.quit();
+        //bfdk
 
 
 
