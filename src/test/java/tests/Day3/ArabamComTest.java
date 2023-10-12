@@ -1,4 +1,4 @@
-package tests;
+package tests.Day3;
 
 import io.appium.java_client.MobileElement;
 
@@ -20,6 +20,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import utils.waitHelper;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;

@@ -1,6 +1,7 @@
 package utils;
 
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.remote.MobileCapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import utils.ConfigReader;
@@ -17,6 +18,8 @@ public class Driver {
     static final String ANDROIDVERSION="10.0";
     static final String PLATFORM="Android";
     static final String OTOMASYON_ISMI="UiAutomator2";
+   public  static String APP_PACKAGE="com.skypicker.main";
+    static final String APP_ACTIVITY="com.kiwi.android.feature.splash.impl.ui.SplashActivity";
 
     public static AndroidDriver getAndroidDriver()  {
         URL appiumServerURL = null;
@@ -33,9 +36,9 @@ public class Driver {
             caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, ANDROIDVERSION);
             caps.setCapability(MobileCapabilityType.PLATFORM_NAME, PLATFORM);
             caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, OTOMASYON_ISMI);
-            caps.setCapability("appPackage","com.dogan.arabam"); // Hangi uygulama uzerinde calismak istiyorsak apk infodan o uygulamanin degerini aliyoruz
-            caps.setCapability("appActivity","com.dogan.arabam.presentation.feature.home.HomeActivity"); // Uygulamayi actiktan sonra hangi sayfadan baslayacagimizi orn; Anasayfa, Profil, vb
-            //caps.setCapability(MobileCapabilityType.NO_RESET,false);
+            caps.setCapability("appPackage",APP_PACKAGE); // Hangi uygulama uzerinde calismak istiyorsak apk infodan o uygulamanin degerini aliyoruz
+            caps.setCapability("appActivity",APP_ACTIVITY); // Uygulamayi actiktan sonra hangi sayfadan baslayacagimizi orn; Anasayfa, Profil, vb
+            caps.setCapability(MobileCapabilityType.NO_RESET,false);
             // true uygulama sifirlanmiyor onceki adimlari muhafaza ediyor
             //false ise her test baslangicinda uygulamayi sifirliyor ve uygulama en bastan basliyor
 
