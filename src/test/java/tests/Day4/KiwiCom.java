@@ -1,5 +1,6 @@
 package tests.Day4;
 
+import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
@@ -13,6 +14,8 @@ import org.testng.annotations.Test;
 import pages.KiwiPage;
 import utils.Driver;
 import utils.waitHelper;
+
+import java.util.List;
 
 public class KiwiCom {
 
@@ -35,17 +38,52 @@ public class KiwiCom {
         //adimlarin hepsinde yesil butona tiklar.
 
         //asagikai sekilde de ilgili noktanin koordinatlari esas ainarak da tiklama islemi yapilabilir-
+        kiwiPage.ayniNoktayaTiklama(4,531,1692);
 
-        for (int i = 0; i < 3; i++) {
-            touchAction.press(PointOption.point(531,1692)).release().perform();
-            waitHelper.sleep(1);
+        wait.until(ExpectedConditions.elementToBeClickable(kiwiPage.Return)).click();
+        kiwiPage.koordinatTiklama(1016,1452);
+        //default kalkisi siler
+        kiwiPage.koordinatTiklama(363,775);
+        kiwiPage.koordinatTiklama(1019,135);
 
+        if (driver.isKeyboardShown()){
+            driver.getKeyboard().pressKey("Kayseri");
+            wait.until(ExpectedConditions.elementToBeClickable(kiwiPage.kayseri)).click();
+        } else {
+            kiwiPage.departureBox.sendKeys("Atina");
         }
 
+        wait.until(ExpectedConditions.elementToBeClickable(kiwiPage.choose)).click();
+        kiwiPage.koordinatTiklama(353,920);
+
+        if (driver.isKeyboardShown()){
+            driver.getKeyboard().pressKey("Singapur");
+            wait.until(ExpectedConditions.elementToBeClickable(kiwiPage.singapore)).click();
+        } else {
+            kiwiPage.departureBox.sendKeys("Atina");
+        }
+
+        wait.until(ExpectedConditions.elementToBeClickable(kiwiPage.choose)).click();
+        kiwiPage.koordinatTiklama(538,1346);
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //trip type one way olarak secilir
 
 
 
