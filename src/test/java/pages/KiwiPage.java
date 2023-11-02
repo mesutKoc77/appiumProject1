@@ -1,6 +1,7 @@
 package pages;
 
 import io.appium.java_client.TouchAction;
+import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -8,6 +9,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utils.Driver;
 import utils.waitHelper;
+
+import java.time.Duration;
 
 public class KiwiPage {
 
@@ -55,6 +58,16 @@ public class KiwiPage {
         waitHelper.sleep(1);
 
     }
+    public void scroll(int startX, int startY, int endX, int endY) {
+        touchAction
+                .press(PointOption.point(startX, startY))  // Başlangıç koordinatları
+                .waitAction(WaitOptions.waitOptions(Duration.ofSeconds(1)))  // 1 saniye bekleyin
+                .moveTo(PointOption.point(endX, endY))  // Bitiş koordinatları
+                .release()  // Bırak
+                .perform();  // İşlemi gerçekleştir
+    }
+
+
 
 
 

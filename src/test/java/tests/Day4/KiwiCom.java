@@ -66,6 +66,10 @@ public class KiwiCom {
         wait.until(ExpectedConditions.elementToBeClickable(kiwiPage.choose)).click();
         kiwiPage.koordinatTiklama(538,1346);
 
+        kiwiPage.koordinatTiklama(571,1042);
+
+        kiwiPage.scroll(511,1329,541,234);
+
 
 
         waitHelper.sleep(2);
