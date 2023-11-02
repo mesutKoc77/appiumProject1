@@ -68,36 +68,6 @@ public class KiwiCom {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        //trip type one way olarak secilir
-
-
-
-
-
-
-
-        //
-
-
-
-
-
-
         waitHelper.sleep(2);
         Driver.quitAppiumDriver();
 
