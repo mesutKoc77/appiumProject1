@@ -21,4 +21,10 @@ public class AllCurrency {
     public WebElement numberZero;
 
 
+    @FindBy (id = "com.smartwho.SmartAllCurrencyConverter:id/EditTextCurrencyB")
+    public WebElement resultChange;
+
+
+
+
 }

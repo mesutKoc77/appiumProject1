@@ -2,6 +2,8 @@ package tests.DAY_5;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -9,6 +11,9 @@ import pages.AllCurrency;
 import utils.Driver;
 import utils.ReusableMethods;
 import utils.waitHelper;
+
+import java.io.File;
+import java.io.IOException;
 
 public class allCurrency {
 
@@ -22,7 +27,7 @@ public class allCurrency {
      */
 
     @Test
-    public void testAllCurrency() {
+    public void testAllCurrency() throws IOException {
 
         System.out.println(driver.getDeviceTime());
 
@@ -52,11 +57,23 @@ public class allCurrency {
         ReusableMethods.scrollWithUiScrollable("TRY");
 
         allCurrency.numberOne.click();
-        allCurrency.numberZero.click();
-        allCurrency.numberZero.click();
-        allCurrency.numberZero.click();
 
-        //1.52
+        for (int i = 0; i < 3; i++) {
+            allCurrency.numberZero.click();
+        }
+        //ekranin screenahot i alinir
+
+        /*
+        Manuel screenshot alma
+        File screenshotAs = driver.getScreenshotAs(OutputType.FILE); //ekran goruntusunu cekiyor. ve bir file olarak cekiyor.
+        FileUtils.copyFile(screenshotAs,new File("tlotyToll.jpg")); //cekilen foto yu bir dosyaya kayit ediyor.
+         */
+
+        ReusableMethods.getScreenshot("zoolotyTl");
+
+        String text = allCurrency.resultChange.getText();
+        driver.sendSMS("88888888",text);
+
 
 
     }
