@@ -18,8 +18,8 @@ public class Driver {
     static final String ANDROIDVERSION="10.0";
     static final String PLATFORM="Android";
     static final String OTOMASYON_ISMI="UiAutomator2";
-   public  static String APP_PACKAGE="com.skypicker.main";
-    static final String APP_ACTIVITY="com.kiwi.android.feature.splash.impl.ui.SplashActivity";
+   public  static String APP_PACKAGE="com.smartwho.SmartAllCurrencyConverter";
+    static final String APP_ACTIVITY="com.smartwho.SmartAllCurrencyConverter.CurrencyConverter";
 
     public static AndroidDriver getAndroidDriver()  {
         URL appiumServerURL = null;

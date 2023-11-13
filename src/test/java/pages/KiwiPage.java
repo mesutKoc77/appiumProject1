@@ -16,6 +16,8 @@ public class KiwiPage {
 
     TouchAction touchAction = new TouchAction<>(Driver.getAndroidDriver());
 
+
+
     public KiwiPage() {
         PageFactory.initElements((WebDriver) Driver.getAndroidDriver(), this);
     }
@@ -31,7 +33,7 @@ public class KiwiPage {
     @FindBy(xpath = "//*[@class='android.widget.EditText']")
     public WebElement departureBox;
 
-    @FindBy(xpath = "//*[@text='Kayseri, Turkey']")
+    @FindBy(xpath = "//*[@text='Istanbul, Turkey']")
     public WebElement kayseri;
 
     @FindBy(xpath = "//*[@text='Choose']")
@@ -39,6 +41,31 @@ public class KiwiPage {
 
     @FindBy(xpath = "//*[@text='Singapore, Singapore']")
     public WebElement singapore;
+
+    @FindBy(id="com.skypicker.main:id/saveButton")
+    public WebElement saveButton;
+
+    @FindBy(xpath = "(//*[@text=\"Search\"])[1]")
+    public WebElement searchButton;
+
+    @FindBy(xpath = "//*[@text=\"Best\"]")
+    public WebElement best;
+
+    @FindBy(xpath = "//*[@text=\"Cheapest\"]")
+    public WebElement cheapButton;
+
+    @FindBy(xpath = "//*[@text=\"Stops\"]")
+    public WebElement stopsButton;
+
+    @FindBy(xpath = "//*[@text=\"Direct\"]")
+    public WebElement direktButton;
+
+    @FindBy(xpath ="(//*[@class=\"android.widget.TextView\"])[13]")
+    public WebElement priceElemet;
+
+
+
+
 
 
 

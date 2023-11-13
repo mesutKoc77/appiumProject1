@@ -25,7 +25,7 @@ public class AppYukleme {
         capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2"); //"Android 6" nin altinda bir surum soz konusu ise
         //UiAutomator kullanilir.
         //bir sonraki satir herhangi bir uygulamayi yuklemek icin kullanilir.
-        capabilities.setCapability(MobileCapabilityType.APP,"/Users/mesut/IdeaProjects/Appium_T_113/Apps/Kiwi.com - Book Cheap Flights_2023.26.0_Apkpure.apk");
+        capabilities.setCapability(MobileCapabilityType.APP,"/Users/mesut/IdeaProjects/Appium_T_113/Apps/Apk Bilgisi_2.3.4_apkcombo.com.apk");
         //app capabilitytype bir uygulmyi yuklee /*
         // mek istedigimizde indirdigimiz apk dosyasinin path uzantisini  vererek
         // o uygulamayi yuklemek icin kullandigimiz desiredCapability./
