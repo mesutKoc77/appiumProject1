@@ -41,7 +41,7 @@ public class allCurrency {
         //methidlari static yapayim ki diger class lardan cagirabileyim. Ama class icindeki bazi variable vb cagirmak ve oradaki objeleri kullanmak istersek
         //tabii ki o class dan bir obje olusturmak gerekiyor...
 
-        //ayrica ornegin ReusableMethods icersinde bir variable a ulasmak istiyorum. Bu durumda o variable i public yapmam gerekoiyr.
+        //ayrica ornegin ReusableMethods icersinde bir variable a ulasmak istiyrum. Bu durumda o variable i public yapmam gerekoiyr.
 
         ReusableMethods.koordinatTiklama(497,345);
 
