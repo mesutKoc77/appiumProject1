@@ -72,7 +72,8 @@ public class allCurrency {
         ReusableMethods.getScreenshot("zoolotyTl");
 
         String text = allCurrency.resultChange.getText();
-        driver.sendSMS("88888888",text);
+        System.out.println(text);
+        // driver.sendSMS("88888888",text); //emulator de iken bunu kullan
 
 
 

@@ -19,13 +19,13 @@ public class AppYukleme {
     public void test1() throws MalformedURLException {
 
         DesiredCapabilities capabilities=new DesiredCapabilities();
-        capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Pixel 2");
-        capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
-        capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "10.0");
-        capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2"); //"Android 6" nin altinda bir surum soz konusu ise
+        capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Redmi Note 9"); //Pixel 2
+        capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android"); //Android
+        capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "10.0"); //10.0
+        capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2"); //UiAutomator2 //"Android 6" nin altinda bir surum soz konusu ise
         //UiAutomator kullanilir.
         //bir sonraki satir herhangi bir uygulamayi yuklemek icin kullanilir.
-        capabilities.setCapability(MobileCapabilityType.APP,"/Users/mesut/IdeaProjects/Appium_T_113/Apps/Apk Bilgisi_2.3.4_apkcombo.com.apk");
+        capabilities.setCapability(MobileCapabilityType.APP,"/Users/mesut/IdeaProjects/Appium_T_113/Apps/AllCurrencyConverter_3.9.0-70_minAPI21(nodpi)_apkmirror.com.apk");
         //app capabilitytype bir uygulmyi yuklee /*
         // mek istedigimizde indirdigimiz apk dosyasinin path uzantisini  vererek
         // o uygulamayi yuklemek icin kullandigimiz desiredCapability./
